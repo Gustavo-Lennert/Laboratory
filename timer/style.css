@@ -1,0 +1,56 @@
+body{
+    background-color: rgb(6, 45, 136);
+    font-family: arial;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+    height: 80vh; 
+} 
+.box-timer{
+    border-radius: 8px;
+    background-color: white;
+    width: 40%;
+    padding: 20px;
+}
+
+.title{
+    margin-top: 0;
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.timer{
+    font-size: 60px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin: 20px;
+}
+
+.pause{
+    color: red;
+}
+
+/* .skeleton{
+    background-image: 
+        linear-gradient(
+            90deg,
+            #ccc 0px,
+            rgb(229 229 229 / 90%) 40px,
+            #ccc 80px
+        );
+    background-size: 300%;
+    background-position: 100% 0;
+    border-radius: inherit;
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer{
+    to {
+        background-position: -100% 0;
+    }
+} */
