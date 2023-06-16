@@ -47,7 +47,7 @@ function game(){
         if(pipePosition <= 120 && pipePosition > 0 && marioPosition < 80){
 
             //Pause score
-            clearInterval(counter);
+            clearInterval(counter);        
             floor.classList.remove('floor-animation');
             clound.classList.remove('clound-animation');
             clound.style.left = `${cloundPosition}px`;
