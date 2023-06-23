@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(115, 177, 232);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    padding: 20px 45px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 1s all ease;
+}
+
+button:hover{
+    transform: scale(1.08);
+}
+
+.modal{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    height: 200px;
+    width: 30%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    animation: modal 1s linear;
+    bottom: 45%;
+    z-index: 2;
+    display: none;
+}
+
+.focus{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: #00000050;
+    z-index: 1;
+    display: none;
+}
+
+.close{
+    position: absolute;
+    font-size: 25px;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes modal-in{
+    from{
+        bottom: 30%;
+        opacity: 0;
+    }
+
+    to{
+        bottom: 45%;
+        opacity: 1;
+    }
+}
+
+@keyframes focus-in{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+
+@keyframes modal-out{
+    from{
+        bottom: 45%;
+        opacity: 1;
+    }
+
+    to{
+        bottom: 30%;
+        opacity: 0;
+    }
+}
+
+@keyframes focus-out{
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+    }
+}
